@@ -1,0 +1,40 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define DD struct dangdang
+int main()
+{
+	struct dangdang
+	{
+		char email[30];
+		char name[30];
+		char addr[100];
+		int num;
+		int bignum;
+		char tel[20];
+		char phone[20];
+		double RMB;
+	};
+	DD d1, d2, d3;
+
+	
+	
+	d1.num = 3;
+	printf("");
+
+	//结构体内字符串赋值方式
+	//d1.name = "123344543"; //无法直接赋值
+
+	//法一：
+	strcpy(d1.name,"1223344");   //需要引用头文件string.h  即 #include<string.h> 
+	printf(d1.name);
+	
+	//法二：
+	sprintf(d2.name,"jack");   //不需要引用头文件string.h
+	printf("\n\n");
+	printf(d2.name);
+	getchar();
+	return 0;
+}
