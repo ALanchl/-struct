@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct DD
+{
+	char str[200];
+};
+
+void main()
+{
+	struct DD m1 = {"ABCDEF"};  //定义结构体变量
+	//printf("%s",m1);      //会报错：结构体变量不可以整体引用
+	printf("\n%s",m1.str);
+	getchar();
+}
+
+	
+
