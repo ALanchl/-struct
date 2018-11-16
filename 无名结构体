@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+//声明无名结构体  -限量版  -可用于设置VIP权限
+	struct
+	{
+			char email[30];
+			char name[30];
+			char addr[100];
+			int num;
+			int bignum;
+			char tel[20];
+			char phone[20];
+			double Deposit;
+	}M1, M2, M3; //定义变量是有限的，只能在这儿定义变量
+	M1 = {
+		"32321@gmail.com",
+		"shitty",
+		"address",
+		123,
+		789,
+		"10086",
+		"16981327631",
+		1221312.324
+	    }; //无名结构体变量初始化
+
+
+
+	getchar();
+};
