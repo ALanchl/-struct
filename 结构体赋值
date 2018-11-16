@@ -1,0 +1,36 @@
+//结构体只能用大括号进行赋值，并只有在创建并初始化的的时候进行赋值
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+//法一：
+struct DD
+{
+	char str[200];
+};
+
+void main()
+{
+	struct DD d1 = {"qseda"};  //创建并初始化的时候赋值，可以
+
+	struct DD m1;  //创建结构体m1
+	//m1 = {"asdhkj"};  //并未在创建的时候初始化，不可以
+	printf("%s",d1.str); //不能打印d1而必须是d1.str   原因：结构体不能整体引用
+	getchar();
+}
+
+
+//法二
+	
+struct DD
+{
+	char str[200];
+}m2={"shitty head"}; //创建并初始化时候赋值，可以
+
+void main()
+{
+  printf("%s",m2.str);
+getchar();
+}
