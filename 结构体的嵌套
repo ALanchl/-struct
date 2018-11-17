@@ -25,7 +25,7 @@
 	{
 		struct Yourstruct yours;
 		yours.data = 1000000;
-	  sprintf(yours.your,"u r so fucin special"); //给结构体yours内部变量your赋值
+	        sprintf(yours.your,"u r so fucin special"); //给结构体yours内部变量your赋值
 		yours.mine.num = 99;
 		sprintf(yours.mine.str,"ABD"); //给结构体yours内部结构体mine的变量str赋值，结构体内部字符串类型数据赋值方式不能用复制号“=”
 		printf("%d",yours.mine.num);
