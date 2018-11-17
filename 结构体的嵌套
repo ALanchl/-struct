@@ -1,0 +1,39 @@
+//
+
+#define   _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+
+	struct Mystruct
+	{
+		char str[200];
+		int num;
+	
+	};
+
+	struct Yourstruct
+	{
+		int data;
+		char your[200];
+		struct Mystruct mine;  //结构体里面嵌套结构体mine
+	};
+
+	void main()
+	{
+		struct Yourstruct yours;
+		yours.data = 1000000;
+	  sprintf(yours.your,"u r so fucin special"); //给结构体yours内部变量your赋值
+		yours.mine.num = 99;
+		sprintf(yours.mine.str,"ABD"); //给结构体yours内部结构体mine的变量str赋值，结构体内部字符串类型数据赋值方式不能用复制号“=”
+		printf("%d",yours.mine.num);
+		getchar();
+
+	};
+
+
+
+
+
