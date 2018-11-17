@@ -1,0 +1,34 @@
+//结构体可以给结构体赋值
+//前提：两个结构体必须是同一类型
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+
+	struct dangdang
+	{
+		char email[30];
+		char name[30];
+		char addr[100];
+		int num;
+		int bignum;
+		char tel[20];
+		char phone[20];
+		double RMB;
+	}d1, dx = {"32432@gmail.com","shitt","DC"};
+
+
+
+
+
+void main()
+{
+	d1 = dx;   //结构体dx给结构体d1赋值
+	printf("%s\n%s", d1.name, dx.name);
+	getchar();
+}
+
+
+
